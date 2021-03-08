@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array operations</title>
+    </head>
+    <body>
+        <script>
+            let cities=['hyd','chennai','mumbai','banglore'];
+            console.log(cities);
+            cities.forEach(function(item,index,array){
+                console.log(item,index);
+            })
+            cities.push('delhi');
+            console.log(cities.pop());
+            console.log('shift '+cities.shift());
+    //        console.log('unshift'+cities.unshift('hyd'));
+            console.log('push '+cities.push('hyd'));
+            console.log(cities.slice(2,1,'Hyderabad','Chennai'));
+            console.log(cities.slice(1,4));
+        </script>
+    </body>
+</html>

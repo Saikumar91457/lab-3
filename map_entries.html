@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map Entries</title>
+    </head>
+    <body>
+        <script>
+            let m1=new Map();
+            m1['SaiKumar']='m4';
+            m1['Sai']='m5';
+            console.log(m1);
+    
+            class person{
+                name;
+                id;
+                clg;
+                constructor(name,id,clg){
+                    this.name=name;
+                    this.id=id;
+                    this.clg=clg;
+                }
+            };
+            let s1=new person('sai','m4','cvr');
+            let s2=new person('sai1','1m4','cvr1');
+            for (const [key, value] of Object.entries(s1)) {
+                console.log(`${key}: ${value}`);
+            }
+            for (const [key, value] of Object.entries(s2)) {
+                console.log(`${key}: ${value}`);
+            }
+            
+    
+            const strsarray = ['March', 'Jan', 'Feb', 'Dec'];
+            strsarray.sort();
+            console.log(strsarray);
+    
+            const numsarray = [1, 30, 4, 21, 100000];
+            numsarray.sort();
+            console.log(numsarray);
+    
+        </script>
+    </body>
+</html>

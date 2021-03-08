@@ -1,0 +1,19 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Rest operator</title>
+        
+    </head>
+    <body>
+        <script>
+            function add(...a){
+                let sum=0;
+                for(let i of a){
+                    sum+=i;
+                }
+                return sum;
+            }
+            console.log(add(1,2,3));
+        </script>
+    </body>
+</html>
